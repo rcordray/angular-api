@@ -1,0 +1,26 @@
+{
+    "name": "angular-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "client.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rcordray/angular-api.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rcordray/angular-api/issues"
+    },
+    "homepage": "https://github.com/rcordray/angular-api#readme",
+    "dependencies": {
+        "angular": "^1.6.6",
+        "body-parser": "^1.17.2",
+        "express": "^4.15.4",
+        "mongoose": "^4.11.9"
+    }
+}

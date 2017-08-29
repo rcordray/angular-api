@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+    <script src="client.js"></script>
+    <title>Angular API</title>
+</head>
+
+<body ng-app="myApp" ng-controller="myController as vm">
+    <!-- <div>
+        <h1>HELLO</h1>
+        <input type="number" ng-model="vm.speciesId" placeholder="Enter a number">
+        <p><button ng-click="vm.getSpecies(vm.speciesId)">Number</button></p>
+
+        <p>{{vm.speciesResult.name}} </p>
+        <p>First Appeared In</p>
+
+        <ul>
+            <li>
+                <a href="{{vm.filmResult.title}} ">{{vm.filmResult.title}} </a>
+            </li>
+        </ul>
+    </div> -->
+
+    <img ng-src="{{vm.giphyResult.data.fixed_height_downsampled_url}}" alt="RANDOM PICTURE">
+    <br>
+    <button ng-click="vm.getTrendingGiphy()">RANDOM PICTURES</button>
+    <br>
+    <br>
+    <input type="text" ng-model="vm.baseUrl" placeholder="Search">
+    <br>
+    <button ng-click="vm.searchGiphy(vm.baseUrl)">SEARCH</button>
+
+    <p> <img ng-repeat="gifs in vm.searchResult.data" ng-src="{{gifs.images.downsized.url}} "></p>
+
+</body>
+
+</html>
